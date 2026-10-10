@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy – AI Video Pipeline</title>
+<style>
+  :root { color-scheme: light dark; --fg: #1d1d1f; --muted: #5f6368; --bg: #ffffff; --accent: #3557d4; }
+  @media (prefers-color-scheme: dark) { :root { --fg: #e8eaed; --muted: #9aa0a6; --bg: #17181b; --accent: #8fa8ff; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 20px 64px; }
+  h1 { font-size: 1.8rem; margin: 0 0 4px; } h2 { font-size: 1.15rem; margin-top: 2em; }
+  .muted { color: var(--muted); } a { color: var(--accent); } footer { margin-top: 48px; font-size: .9rem; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <p><a href="index.html">← AI Video Pipeline</a></p>
+  <h1>Privacy Policy</h1>
+  <p class="muted">Last updated: 10 October 2026</p>
+
+  <p>AI Video Pipeline ("the app") is a private tool developed and operated by a single individual ("the operator") for the
+  operator's own use. It connects only to the operator's own YouTube channel and TikTok account. This policy explains what data
+  the app accesses, how it is used and stored, and how access can be revoked.</p>
+
+  <h2>1. Data the app accesses</h2>
+  <p><strong>From Google / YouTube</strong> (YouTube API Services, with the operator's consent via Google sign-in; scopes
+  <code>youtube.upload</code> and <code>youtube.force-ssl</code>):</p>
+  <ul>
+    <li>the identifier, title and handle of the operator's YouTube channel;</li>
+    <li>the operator's own videos uploaded by the app: their identifiers, titles, descriptions, tags, privacy status and processing status;</li>
+    <li>view, like, comment and share statistics of these videos;</li>
+    <li>comments posted on these videos (comment text, author display name, time) and the operator's replies.</li>
+  </ul>
+  <p><strong>From TikTok</strong> (Login Kit and Content Posting API; scopes <code>user.info.basic</code>, <code>video.upload</code>,
+  <code>video.publish</code>): the open ID, display name and username of the operator's TikTok account, the creator posting options,
+  and the publishing status of the videos uploaded by the app.</p>
+  <p>The app does not access contacts, e-mail, files, location or any account other than the operator's own.</p>
+
+  <h2>2. How the data is used</h2>
+  <ul>
+    <li>to upload and publish the operator's videos and keep their metadata up to date;</li>
+    <li>to show the operator the statistics of the published videos;</li>
+    <li>to let the operator read comments on these videos and reply to them. To help with replies, the text of a comment can be sent
+    to the OpenAI API to generate a reply <em>draft</em>; the operator reviews every draft and decides whether it is posted. No other
+    Google user data is sent to third parties.</li>
+  </ul>
+  <p>The data is not sold, not used for advertising, and not used to train AI models. (Under OpenAI's API data policy, data sent
+  through the API is not used for model training by default; OpenAI may retain it for a limited period for abuse monitoring.)</p>
+  <p>AI Video Pipeline's use and transfer of information received from Google APIs adheres to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+  including the Limited Use requirements.</p>
+
+  <h2>3. Storage and security</h2>
+  <ul>
+    <li>The app and its database run on the operator's own computer at home (apart from the comment texts sent to the OpenAI API
+    for reply drafts, see section 2).</li>
+    <li>OAuth refresh tokens are stored encrypted (AES-256-GCM); short-lived access tokens are kept only in memory.</li>
+    <li>The app is reachable only from the operator's home network and private VPN.</li>
+  </ul>
+
+  <h2>4. Retention, deletion and revoking access</h2>
+  <ul>
+    <li>Stored tokens are deleted when the operator disconnects the account in the app.</li>
+    <li>Statistics and comments are kept only as long as the operator needs them for the published videos and are deleted on request.</li>
+    <li>Google access can be revoked at any time on the
+      <a href="https://security.google.com/settings/security/permissions">Google security settings page</a>;
+      TikTok access in the TikTok app's settings (Security → apps and services permissions).</li>
+  </ul>
+
+  <h2>5. YouTube and Google</h2>
+  <p>The app uses YouTube API Services. By using the app's YouTube features you agree to the
+  <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Google's handling of data is described in the
+  <a href="http://www.google.com/policies/privacy">Google Privacy Policy</a>.</p>
+
+  <h2>6. Contact</h2>
+  <p>Questions or deletion requests: <a href="mailto:ggmarkk.stories@gmail.com">ggmarkk.stories@gmail.com</a></p>
+
+  <h2>Magyar összefoglaló</h2>
+  <p>Az alkalmazás csak az üzemeltető saját YouTube-csatornájához és TikTok-fiókjához kapcsolódik. A saját feltöltött videók adatait,
+  statisztikáit és a hozzájuk írt kommenteket kezeli; egy komment szövege a válaszjavaslat elkészítéséhez az OpenAI API-ba kerülhet,
+  a választ mindig az üzemeltető hagyja jóvá. Az adatok az üzemeltető saját gépén vannak, a tokenek titkosítva; harmadik félnek nem
+  adjuk el, reklámra és modelltanításra nem használjuk. A hozzáférés bármikor visszavonható a Google biztonsági beállításaiban,
+  illetve a TikTok alkalmazásban. Kapcsolat: ggmarkk.stories@gmail.com</p>
+
+  <footer><a href="terms.html">Terms of Service</a> · <a href="index.html">Home</a></footer>
+</main>
+</body>
+</html>
